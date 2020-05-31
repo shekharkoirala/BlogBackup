@@ -62,7 +62,7 @@ resources:
 ---
 
 ## Introduction
-I want to create a Blog. But there are some conditions that i want:
+I want to create a Blog. But there are some conditions that I want:
 1. Easy/simple to create
 2. The UI should match my style.
 3. Based on Git, for future reference.
@@ -294,6 +294,7 @@ I will look into this topic pretty soon and update in the post.
 * [loveit Docs](https://hugoloveit.com/categories/documentation/)
 * [Real world inpiring Example: loveit](https://tyrangyang.github.io/)
 
-
 ### markdown
 * [markdown syntax](https://learn.getgrav.org/16/content/markdown)
+
+Add comments to support this Blog. 
