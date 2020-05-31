@@ -270,7 +270,9 @@ checkthe site at `<username>.github.io`
 ## Future
 We have created a site , but we are not satisfied yet. yeah i know.
 * google analytics : Done
+
 ![preview](/images/ganalytics.png)
+
 * Facebook Comments : Done
 * Agolia Search : Done
 * Add Jupyter notebooks in the blog.

@@ -1,1 +1,0 @@
-# shekharkoirala.github.io
