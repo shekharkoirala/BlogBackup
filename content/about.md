@@ -27,7 +27,7 @@ hiddenFromSearch: false
 fontawesome: true
 linkToMarkdown: true
 rssFullText: false
-
+hidefooter: true
 
 seo:
   images: []

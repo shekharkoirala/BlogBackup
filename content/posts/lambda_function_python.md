@@ -10,6 +10,7 @@ license: ""
 images: []
 comments: true
 
+hidefooter: true
 tags: ["Blog"]
 categories: ["Random"]
 featuredImage: ""
@@ -224,3 +225,8 @@ You could limit the resources, see Memory size and Max Memory used.
 
 
 I hope the stats are convincing enough to adopt Lambda function instead a buying bulky Instances.
+
+
+<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="58754b57-8540-430b-880f-296df0ceb8f8"
+    data-page-id="{{ site.Title }}" data-page-url="{{ site.Title }}" data-page-title="{{ site.Title }}" data-theme="dark"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
