@@ -3,7 +3,7 @@
 	url = https://github.com/dillonzq/LoveIt.git
 [submodule "public"]
 	path = public
-	url = git@shekhar.github.com:shekharkoirala/shekharkoirala.github.io.git
+	url = git@github-mac:shekharkoirala/shekharkoirala.github.io.git
 	branch = master
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod

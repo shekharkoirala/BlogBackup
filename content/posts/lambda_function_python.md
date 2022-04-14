@@ -8,6 +8,7 @@ authorLink: ""
 description: ""
 license: ""
 images: []
+comments: true
 
 tags: ["Blog"]
 categories: ["Random"]
@@ -62,7 +63,7 @@ The post is a quick guide on "How we could use AWS lambda services to deploy som
 <!--more-->
 The following steps could lets you get going. In this example below, I am aggregating data in MongoDB and store the output in Redis. 
 
-### Step 1
+### Step 1 function creating
 Create function : [https://console.aws.amazon.com/lambda/home?region=us-east-1](https://console.aws.amazon.com/lambda/home?region=us-east-1)
 One has to login to the AWS console and create a lambda function. 
 Think Lambda function as a task that we want to do here. 
@@ -71,7 +72,7 @@ To run a function , we need a script. Lets say : `lambda_function.py`
 The script wont run until it mets all its dependency. In Data Science world, pandas , numpy etc.
 We need to provide all the Dependency a script it requires. 
 
-### Step 2
+### Step 2 Dependencies
 For managing the Dependencies : we could looked at the official Documentation. [https://docs.aws.amazon.com/lambda/latest/dg/python-package.html](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)
 In short: We want to dump all the dependencies in a folder. 
 
@@ -86,7 +87,7 @@ The AWS lambda works in different version of linux which doesnt support the pypi
 
 To use such Libraries, we will get to the new concept of Lmbda function ie : `LAYERS`
 
-### step 3
+### step 3: the code
 Make your code ready, especially the Beginning and the end. 
 Most of the standard python use `config.ini` or `.env` file to get the variables value. Change that to `os.environ.gte()` function. 
 ```python
@@ -114,7 +115,7 @@ def lambda_handler(event, context):
 You could change the function name `lambda_handler` and the filename   `lambda_function.py`
 but it requires you to change the name in AWS lambda function console too. So, for sake of lazyness, lets stick to the default naming. 
 
-### Step 3
+### Step 4: shipment
 Make the shipment ready. 
 ```shell script
 ~/my-function$ cd package
@@ -126,14 +127,14 @@ $  zip -g function.zip lambda_function.py
 
 Here, what we did is , we zipped the packages [ dependencies ]  and then add our script to the `function.zip` file. 
 
-### Step 4
+### Step 5: layers ?
 You could see `Function code`, when you scroll down in the lambda dunction page in your AWS console  , and `Actions` box, where one get options like `upload a .zip file` or `upload a file from Amazon S3`
 Once you upload your zip file.  You will see your code [ unless your code is more that 10 MB ]
 
 There you could save and test the code. 
 But since you need more complex dependencies You need to know little mroe about layers. 
 
-### Step 5 
+### Step 5 : yeah, the layers.
 Layers:
 If your code depends on AWS lambda function layers, you could do Three things to solve this. 
 link to add layer to your lambda function [https://console.aws.amazon.com/lambda/home?region=us-east-1#/add/layer?function=trending_aggregator](https://console.aws.amazon.com/lambda/home?region=us-east-1#/add/layer?function=trending_aggregator)
@@ -209,7 +210,7 @@ aws lambda publish-layer-version --layer-name my-layer --description "My layer" 
 
 yeah, owning one own layer is hard, But we already have two other alternatives. 
 
-### Step 6
+### Step 6 RUNNNN
 Run, 
 you could test the model, some database dependency like redis and mongodb should be abale to communicate with AWS lambda otherwise it wont work. 
 But Once you do that, it will surely work and you will see the bueaty. 

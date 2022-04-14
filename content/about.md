@@ -1,5 +1,5 @@
 ---
-title: "Shekhar Koirala"
+title: "shekhar koirala"
 subtitle: ""
 date: 2020-05-31T14:17:54+05:45
 draft: false
@@ -9,50 +9,26 @@ description: ""
 license: ""
 images: []
 
+comments: false
+showtoc: false
+ShowBreadCrumbs: false
+ShowMeta: false
+disableShare: true
+hideMeta: true
+
+
 tags: []
 categories: []
 featuredImage: ""
 featuredImagePreview: ""
 
-hiddenFromHomePage: false
+hiddenFromHomePage: true
 hiddenFromSearch: false
-twemoji: false
-lightgallery: true
-ruby: true
-fraction: true
 fontawesome: true
 linkToMarkdown: true
 rssFullText: false
 
-toc:
-  enable: true
-  auto: true
-code:
-  copy: true
-  # ...
-math:
-  enable: true
-  # ...
-mapbox:
-  accessToken: ""
-  # ...
-share:
-  enable: true
-  # ...
-comment:
-  enable: true
-  # ...
-library:
-  css:
-    # someCSS = "some.css"
-    # located in "assets/"
-    # Or
-    # someCSS = "https://cdn.example.com/some.css"
-  js:
-    # someJS = "some.js"
-    # located in "assets/"
-    # Or
-    # someJS = "https://cdn.example.com/some.js"
+
 seo:
   images: []
   
