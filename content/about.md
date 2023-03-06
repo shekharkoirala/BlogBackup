@@ -38,7 +38,9 @@ resources:
 ---
 ## Work
 Machine Learning Engineer : Identv
+Software Engineer : Ekbana
 
 ## Education 
+Online Masters in Computer Science - Georgia Tech
 Electronics and Communication Engineer - IOE, Thapathali Campus
 
