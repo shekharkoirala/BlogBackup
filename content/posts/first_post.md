@@ -300,7 +300,3 @@ I will look into this topic pretty soon and update in the post.
 
 Add comments to support this Blog. 
 
-
-<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="58754b57-8540-430b-880f-296df0ceb8f8"
-    data-page-id="{{ site.Title }}" data-page-url="{{ site.Title }}" data-page-title="{{ site.Title }}" data-theme="dark"></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>

@@ -1,7 +1,7 @@
 ---
 title: "Fast Fury and Fantastic .... The ffmpeg"
 date: 2023-03-06T22:49:00Z
-draft: true
+draft: false
 
 author: "shekhar"
 authorLink: ""
@@ -19,15 +19,79 @@ comments: true
 ShowPostNavLinks: false
 hidefooter: true
 
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  # ...
+math:
+  enable: true
+  # ...
+mapbox:
+  accessToken: ""
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
 ---
-![preview](images/gt.png)
 ### ffmpeg Recipes
 
-1. Extract frames from video: 
-   
-   
-2. 
+A list of useful receipes when using ffmpeg. A dump for future references.
 
-<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="58754b57-8540-430b-880f-296df0ceb8f8"
-    data-page-id="{{ site.Title }}" data-page-url="{{ site.Title }}" data-page-title="{{ site.Title }}" data-theme="dark"></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+
+1. Extract frames from video: 
+   ```shell script
+    #!/bin/zsh
+
+    # Find all .mp4 files in the current directory and store them in an array
+    input_files=(*.mp4)
+
+    # Loop through each input file
+    for input_file in "${input_files[@]}"
+    do
+    # Get the path to the input file directory
+    input_dir="$(dirname "$input_file")"
+
+    # Create a folder for the input file images in the same directory as the input file
+    folder_name="${input_file%.*}_images"
+    output_dir="$input_dir/$folder_name"
+    mkdir -p "$output_dir"
+    
+    # Extract images from the input file and save them to the folder
+    ffmpeg -i "$input_file" -r 1 "$output_dir/output_%03d.png"
+    done
+    ```
+   
+2. convert .h265 video to .h264
+
