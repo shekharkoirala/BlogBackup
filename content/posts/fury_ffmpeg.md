@@ -5,19 +5,20 @@ date: 2023-03-06T22:49:00Z
 draft: false
 author: "shekhar"
 authorLink: ""
-license: "MIT"
 description: ""
+license: "MIT"
+images: []
+comments: true
 
+hidefooter: true
 tags: ["ffmpeg", "developer", "video"]
 categories: ["Work", "Tech Notes"]
+featuredImage: ""
+featuredImagePreview: ""
 
-searchHidden: true
+
 ShowBreadCrumbs: true
-hiddenFromHomePage: false
-showtoc: false
-comments: true
 ShowPostNavLinks: false
-hidefooter: true
 
 featuredImage: ""
 featuredImagePreview: ""
@@ -92,6 +93,14 @@ A list of useful receipes when using ffmpeg. A dump for future references.
     ffmpeg -i "$input_file" -r 1 "$output_dir/output_%03d.png"
     done
     ```
+
+2. combine video.mp4 and audio.mp4 to a single video. 
+    ```shell script
+    ffmpeg -i video.mp4 -i audio.mp4 -c copy -map 0:0 -map 1:1 -shortest combined.mp4
+    ```
    
-2. convert .h265 video to .h264
+3. convert .h265 video to .h264
+   ```shell script
+   ffmpeg -i video1.mov -vcodec h264 -acodec mp2 video1.mp4
+   ```
 
