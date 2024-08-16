@@ -14,7 +14,11 @@ git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth
 rm -rf public
 git submodule update --init
 ## update the submodules
-git submodule update –remote 
+git submodule update --init --recursive
+git submodule update --remote --merge
+
+## remove cache
+git rm --cached public -f
 
 ## ./deploy.sh 
 

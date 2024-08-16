@@ -1,7 +1,8 @@
-baseURL: "http://shekharkoirala.github.io/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-title: shekhar # add title here
+baseURL: "https://shekharkoirala.github.io/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+title: shekhar's Blog # add title here
+copyright: "© shekhar koirala"
 paginate: 5
-theme: PaperMod
+theme: [hugo-PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -20,6 +21,10 @@ languages:
     en:
         languageName: "English"
         weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
         menu:
             main:
                 - name: Post 📝
@@ -49,9 +54,9 @@ disqusShortname: minusninedollar
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: DumpDocs
-    description: "Personal blog of Shekhar Koirala"
+    description: "Personal blog about Machine learning, Artificial Intelligence, ML Ops, LLM, Python"
     author: shekhar koirala
-    keywords : ["Machine learning", "Data Science"]
+    keywords : ["Machine learning", "Data Science", "AI", "ML Ops", "LLM", "Dublin"]
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: dark
@@ -125,7 +130,8 @@ params:
         google:
             SiteVerificationTag: "UA-168093774-1"
 
-    # assets:
+    assets:
+      disableHLJS: true
     #     favicon: "<link / abs url>"
     #     favicon16x16: "<link / abs url>"
     #     favicon32x32: "<link / abs url>"
