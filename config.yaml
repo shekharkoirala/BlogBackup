@@ -2,7 +2,7 @@ baseURL: "https://shekharkoirala.github.io/" # if your site is in 'https', then 
 title: shekhar's Blog # add title here
 copyright: "© shekhar koirala"
 paginate: 5
-theme: [hugo-PaperMod]
+theme: [PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
