@@ -1,5 +1,5 @@
 ---
-title: "Install Cuda 12.2 in Ubuntu 24.04"
+title: "Installing Cuda 12.x in Ubuntu 24.04"
 date: 2024-08-16T10:56:06+01:00
 draft: false
 
