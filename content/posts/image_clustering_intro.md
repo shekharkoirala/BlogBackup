@@ -12,7 +12,7 @@ comments: true
 
 hidefooter: true
 tags: ["image", "clustering", "unsupervised", "ml"]
-categories: ["Ml", "clustering"]
+categories: ["ML", "clustering"]
 featuredImage: ""
 featuredImagePreview: ""
 

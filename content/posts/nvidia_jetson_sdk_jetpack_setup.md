@@ -1,5 +1,5 @@
 ---
-title: "Setting up Nvidia SDK Manager and Torch Library for Development"
+title: "Setting up Nvidia SDK Manager and Torch Library in Jetson Board"
 date: 2024-08-19T13:37:53+01:00
 draft: false
 

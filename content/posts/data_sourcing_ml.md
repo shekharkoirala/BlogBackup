@@ -12,7 +12,7 @@ comments: true
 
 hidefooter: true
 tags: ["data", "pipeline", "prefect","workflow", "ml"]
-categories: ["Ml", "data"]
+categories: ["ML", "data"]
 featuredImage: ""
 featuredImagePreview: ""
 
